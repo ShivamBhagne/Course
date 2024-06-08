@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+.TE{
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+.TE1{
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+.RO{
+    
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.hero{
+    /* border: 2px solid rgb(119, 226, 43); */
+    padding-top: 70px;
+    background-image: url(../Images/backgrounds/shape-1.png);
+    background-repeat: no-repeat;
+    /* background-position: right; */
+    background-size:contain;
+    background-color: rgb(12, 11, 11);
+    height: auto
+    /* margin: 10px; */
+}
+.head{
+    position: fixed;
+    height: 70px;
+    /* border: 2px solid red; */
+    background-color: white;
+}
+.navbar ul{
+    
+    list-style-type: none;
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+}
+
+.logo1{
+    height: 60px;
+    /* width: 50%; */
+}
+.logo2{
+    height: 39px;
+    border: 1px solid black;
+}
+.hero-text{
+    padding: 20px;
+
+    /* border: 2px solid blue; */
+    padding-top: 50px;
+    height: 100%;
+    background-image: url(../Images/backgrounds/shape-1_1.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 100% 100%;
+}
+.h-img{
+    border: 1px solid rgb(140, 255, 47); 
+    border-radius: 50%; 
+    width: 40px; 
+    
+    height: 40px;
+}
+.hero-pic{
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border: 2px solid red;
+    border-radius: 130px;
+    margin: 5px;
+    margin-top: 70px;
+    line-height: 25px;
+    background-color: rgb(244, 239, 239);
+}
+
+.Aboutme{
+    
+background-image: url(../Images/backgrounds/shape-2_1.png);
+background-size: cover;}
+
+.Education{
+    line-height: 15px;
+    border-radius: 16px;
+    border: 2px solid ;
+}
