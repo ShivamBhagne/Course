@@ -11,33 +11,40 @@
 </head>
 
 <body>
-    <section class="head w-100 ">
+    <section class="head w-100  ">
         <nav class="navbar w-100 d-flex">
-            <img src="Images/illustrations/cc 1 logo.PNG " class=" w-50 logo1">
-            <button class="btn btn-light-emphasis" type="button" data-bs-toggle="offcanvas"
+            <img src="Images/illustrations/cc 1 logo.PNG " class=" w-50 d-md-none logo1">
+            <img src="Images/illustrations/cc 1 logo.PNG " class=" w-25 d-none d-md-flex  logo1">
+                
+            
+            
+            <header class="d-block d-md-none">
+                <button class="btn btn-light-emphasis" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img
                     src="Images/illustrations/icons8-menu-32.png " class="p-2 me-2 logo2"></button>
 
-            <div class="offcanvas offcanvas-end w-75" tabindex="-1" id="offcanvasRight"
-                aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas offcanvas-end w-75  " id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasRightLabel"><img src="Images/illustrations/cc logo.PNG "
                             class="p-2 logo1"></h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div class="offcanvas-body  RO">
+                <div class="offcanvas-body  RO ">
                     <p data-bs-dismiss="offcanvas" data-bs-target="offcanvasRight"><a href="#one">HOME </a></p>
                     <p data-bs-dismiss="offcanvas" data-bs-target="offcanvasRight"><a href="#two">ABOUT</a></p>
-                    <p><a href="#">EDUCATION</a></p>
+                    <p data-bs-dismiss="offcanvas" data-bs-target="offcanvasRight"><a href="#three">EDUCATION</a></p>
                     <p><a href="#">SKILLS</a></p>
                     <p><a href="#">PROJECTS</a></p>
                 </div>
             </div>
-            <ul class=" d-md-flex d-none w-100 justify-content-evenly ">
+            
+                
+            </header>
+            <ul class=" d-md-flex d-none w-75 mt-4 justify-content-evenly ">
                 <li></li>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">EDUCATION</a></li>
+                <li><a href="#one">HOME</a></li>
+                <li><a href="#two">ABOUT</a></li>
+                <li><a href="#three">EDUCATION</a></li>
                 <li><a href="#">SKILLS</a></li>
                 <li><a href="#">PROJECTS</a></li>
 
@@ -50,12 +57,12 @@
     </section>
     <section class="hero text-light " id="one">
 
-        <div class=" hero-text w-100 d-md-flex">
+        <div class="row  hero-text w-100 d-md-flex p-md-5">
 
-            <div class=" ">
+            <div class="col col-md-6  ">
                 <p class="fs-2 fw-bold RO">Hi I’m</p>
                 <p class="display-3 fw-bolder RO">Shivam Bhagne</p>
-                <p class="w-100 text-justify RO  ">Passionate full-stack developer with proficiency in frontend and
+                <p class="w-100  text-justify RO  ">Passionate full-stack developer with proficiency in frontend and
                     backend technologies. Eager to contribute innovative solutions and enhance user experience.</p>
                 <button type="button" class="btn btn-success fs-3" style="border-radius: 60px;">Contact Me!</button>
                 <div class="w-75 pt-3 d-flex justify-content-between">
@@ -66,15 +73,28 @@
                 </div>
             </div>
 
-            <!-- <div class="hero-pic RO ">
-                <img src="Images/backgrounds/clients-1.png" class="p-3" alt="">
-                <p class="fw-100 fs-4">Fullstack Developer</p>
-                <p class="text-success">Addresss: <br><span class="text-dark">Pune</span></p>
-                <p class="text-success ">Email: <br><span class="text-dark">Shivambhagne@gmail.com</span></p>
+            <div class="col col-6 p-2 mt-4 mt-md-0 p-md-0 d-md-block d-none"
+                style="border: 10px dotted rgba(16, 248, 186, 0); border-radius:50%">
+                <div class="p-2" style="border: 10px dotted rgba(16, 248, 186, 0.436); border-radius:50%">
+                    <div class="p-2" style="border: 10px dotted rgba(16, 248, 186, 0.416); border-radius:50%">
+                        <div class="p-2" style="border: 10px dotted rgba(16, 248, 186, 0.626); border-radius:50%">
+                            <div class="p-2" style="border: 10px dotted rgba(16, 248, 186, 0.753); border-radius:50%">
+                                <div class="p-2"
+                                    style="border: 10px dotted rgba(16, 248, 167, 0.845); border-radius:50%">
+                                    <div class="p-2"
+                                        style="border: 10px dotted rgba(16, 248, 186, 0.906); border-radius:50%">
+                                        <div class="p-2" border-radius:50%">
+                                            <img src="Images/backgrounds/man.png" width="100%" height="100%"
+                                                style="border-radius: 75%;" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-
-
-            </div> -->
 
             <div class="p-2">
                 <div class="p-2">
@@ -83,26 +103,27 @@
             </div>
 
         </div>
-        
+
     </section>
     <div id="two" class=" p-5">
 
     </div>
 
-    <section class="Aboutme p-2  RO" >
+    <section class="Aboutme p-2  RO d-md-flex flex-column">
 
-        <div>
+        <div class="d-md-flex flex-row-reverse">
+            <div>
             <p class="text-success RO fs-6">About Me</p>
             <p class="display-5 fw-bold  TE ">Turning ideas into scalable web solutions.</p>
             <p class="text-justify p-2 w-100">I'm Shivam Bhagne, a recent graduate with a strong foundation in
                 full-stack development principles.My experience lies in utilizing HTML, CSS, JavaScript, and frameworks
-                like React to bring web projects to life.
-
-                <img src="Images/backgrounds/about.png" width="100%" height="100%" alt="">
+                like React to bring web projects to life.</p>
+            </div>
+                <img class="pe-4" src="Images/backgrounds/about.png" width="100%" height="100%" alt="">
         </div>
         <div class="RO w-100 text-center">
             <p class="text-dark fs-5 ">Personal Details</p>
-            <div class="d-flex w-100 justify-content-around" style="font-size: 14px;">
+            <div class="d-flex w-100 justify-content-around " style="font-size: 16px;">
                 <p class="text-success text-center ">Date of Birth<span class="text-dark"><br>18 Nov 2002</span></p>
                 <p class="text-success">Address <br><span class="text-dark">Pune</span></p>
             </div>
@@ -111,66 +132,104 @@
 
         </div>
 
-        <!-- <div class=" d-md-flex flex-md-column ">
-            <div class="d-flex  flex-md-row 
-             justify-content-evenly ">
-                <div class="d-flex flex-column flex-md-row            TE1        " style="font-size: large;"><span><img
-                            src="Images/illustrations/icons8-tiktok-verified-account-48.png" alt="">Problem
-                        Solver</span>
-                    <span><img src="Images/illustrations/icons8-tiktok-verified-account-48.png" alt="">Good
-                        Communication</span>
-                    <span><img src="Images/illustrations/icons8-tiktok-verified-account-48.png" alt="">Attention to
-                        Detail</span>
-                    <span><img src="Images/illustrations/icons8-tiktok-verified-account-48.png" alt="">Proven Track
-                        Record</span>
-                </div>
 
-
-            </div> -->
 
 
         </div>
     </section>
 
-    <section class="EA container">
-        <main class="Education">
+    <section id="three" class="EA p-2 bg-dark d-md-flex justify-content-evenly ">
+
+
+
+        <main class="Education p-1 ">
+            <div class="p-5 p-md-0">
+
+            </div>
+
             <h2 class="TE"><img src="Images/illustrations/icons8-flying-mortarboard-48.png" alt="">EDUCATION</h2>
 
 
-            <div class="card      mb-3" style="max-width: 18rem;">
-                <div class="card-header">6 Months</div>
-                <div class="card-body">
-                    <h5 class="card-title">Diploma in Fullstack Development</h5>
-                    <p class="card-text">Envision Trainning Institute.</p>
+            <div class="card1 RO p-2 mt-3 mb-3 " >
+                <div>6 Months</div>
+                <div class="pt-2 " style="border-top: 1px solid rgb(116, 237, 189)">
+                    <h6>Diploma in Fullstack Development</h6>
+                    <p>Envision Trainning Institute.</p>
                 </div>
             </div>
 
-            
-<!--  -->
+            <div class="card1 RO p-2 mt-3 mb-3 " style=" max-width: 18rem; ">
 
-
-
-            <div>
-
-
-                <p>Diploma in Fullstack Development</p>
-                <p>Envision Trainning Institute</p>
-                <p>6 Months</p>
+                <!-- <p></p>
+                <p></p>
+                <p></p> -->
+                <div class="">2021-2024</div>
+                <div class="pt-2 " style="border-top: 1px solid rgb(116, 237, 189)">
+                    <h6>B.E Computer Engineering</h6>
+                    <p>JSCOE</p>
+                </div>
             </div>
-            <div>
-                <p>B.E Computer Engineering</p>
-                <p>JSCOE</p>
-                <p>2021-2024</p>
-            </div>
-            <div>
-                <p>Diploma in Computer Science</p>
-                <p>Jayawantrao Sawant Polytechnic</p>
-                <p>2018-2021</p>
+
+            <div class="card1 RO p-2 mt-3 mb-3 " style=" max-width: 18rem; ">
+
+                <div ">2018-2021</div>
+                <div class=" pt-2 " style=" border-top: 1px solid rgb(116, 237, 189)">
+                    <h6>Diploma in Computer Science</h6>
+                    <p>Jayawantrao Sawant Polytechnic</p>
+                </div>
             </div>
 
         </main>
+        <!--  -->
+        
+        <!--  -->
+        <main class="Education p-1 w-md-50 ">
+            <h2 class="TE"><img src="Images/illustrations/icons8-certificate-48.png" alt="">TRAININGS</h2>
+
+
+            <div class="card1 RO p-2 mt-3 mb-3 " style=" max-width: 18rem; ">
+                <div class="mb-2">6/3/23 - 2/4/23 [1 Month]</div>
+                <div class="pt-2 " style="border-top: 1px solid rgb(116, 237, 189)">
+                    <h6>Web Development Internship</h6>
+                    <p>InternPe</p>
+                </div>
+            </div>
+
+            <div class="card1 RO p-2 mt-3 mb-3 " style=" max-width: 18rem; ">
+
+
+                <div class="mb-2">15/3/23 - 15/4/23 [1 Month]</div>
+                <div class="pt-2 " style="border-top: 1px solid rgb(116, 237, 189)">
+                    <h6>Android Application Development</h6>
+                    <p>Oasis Infobyte</p>
+                </div>
+            </div>
+
+            <div class="card1 RO p-2 mt-3 mb-3 " style=" max-width: 18rem; ">
+
+                <div class="mb-2">15/6/20 - 31/7/20 [1 Month]</div>
+                <div class="pt-2 " style="border-top: 1px solid rgb(116, 237, 189)">
+                    <h6>Training in AI & ML</h6>
+                    <p>ProAzure</p>
+                </div>
+            </div>
+
+
+
+
+
+            <!--  -->
+
+
+
+
+        </main>
+
     </section>
 
+    <section class="">
+
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

@@ -28,13 +28,14 @@
 .hero{
     /* border: 2px solid rgb(119, 226, 43); */
     padding-top: 70px;
-    background-image: url(../Images/backgrounds/shape-1.png);
+    /* background-image: url(../Images/backgrounds/shape-1.png); */
     background-repeat: no-repeat;
     /* background-position: right; */
     background-size:contain;
     background-color: rgb(12, 11, 11);
-    height: auto
+    height: auto;
     /* margin: 10px; */
+    background-position: right;
 }
 .head{
     position: fixed;
@@ -71,7 +72,7 @@
     background-size: 100% 100%;
 }
 .h-img{
-    border: 1px solid rgb(140, 255, 47); 
+    /* border: 1px solid rgb(140, 255, 47);  */
     border-radius: 50%; 
     width: 40px; 
     
@@ -95,9 +96,26 @@
     
 background-image: url(../Images/backgrounds/shape-2_1.png);
 background-size: cover;}
+.EA{
+    background-image: url(../Images/backgrounds/shape-2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin:0 auto ;
+    /* text-align: center; */
+}
+
 
 .Education{
     line-height: 15px;
-    border-radius: 16px;
-    border: 2px solid ;
+    color: white;
 }
+.card1{
+    color: white;
+    border-radius: 5px ;
+    border: 1px solid rgb(116, 237, 189);
+   
+}
+
+/*  */
+
+
